@@ -7,11 +7,11 @@ import raj from "./assets/raj.jpeg";
 const SITE = {
   name: "Vijay Classes",
   tagline: "Where Every Student Shines",
-  phone: "+91 98765 43210",
+  phone: "+91 8446818026",
   email: "info@vijayclasses.in",
-  whatsapp: "919876543210",
-  address: "123, Knowledge Hub, Near City Mall, Pune – 411001",
-  estYear: 2005,
+  whatsapp: "918446818026",
+  address: "101, Opposite to Istiyak Complex, Sativali Naka, Vasai – 401208",
+  estYear: 2014,
 };
 
 const NAV_LINKS = ["Home","About","Courses","Gallery","Results","Branches","Contact"];
@@ -35,9 +35,9 @@ const COURSES = [
 
 const STATS = [
   { label:"Students Taught", value:12000, suffix:"+" },
-  { label:"Years of Excellence", value:19, suffix:"+" },
+  { label:"Years of Excellence", value:12, suffix:"+" },
   { label:"Board Toppers", value:340, suffix:"+" },
-  { label:"Success Rate", value:98, suffix:"%" },
+  { label:"Success Rate", value:100, suffix:"%" },
 ];
 
 const TESTIMONIALS = [
@@ -56,9 +56,9 @@ const FAQS = [
 ];
 
 const BRANCHES = [
-  { name:"Pune – Main Branch", address:"123 Knowledge Hub, Deccan, Pune 411004", timing:"7 AM – 9 PM", phone:"+91 98765 43210" },
-  { name:"Pune – Kothrud", address:"45 Sunrise Plaza, Kothrud, Pune 411038", timing:"8 AM – 8 PM", phone:"+91 98765 43211" },
-  { name:"Nashik Branch", address:"12 Success Tower, College Road, Nashik 422005", timing:"7 AM – 9 PM", phone:"+91 98765 43212" },
+  { name:"Vasai – Main Branch", address:"101, Opposite to istiyak complex , Sativali naka, Vasai 401208", timing:"7 AM – 9 PM", phone:"+91 8446818026" },
+  { name:"Sativali", address:"101, Opposite to istiyak complex , Sativali naka, Vasai 401208", timing:"8 AM – 8 PM", phone:"+91 8446818026 " },
+  { name:"Golani", address:"101, Opposite to istiyak complex , Sativali naka, Vasai 401208", timing:"7 AM – 9 PM", phone:"+91 8446818026" },
 ];
 
 const FOUNDERS = [
@@ -302,7 +302,7 @@ function Hero() {
             {/* Floating chips */}
             <div className="absolute -top-4 -right-6 px-3 py-1.5 rounded-xl text-xs font-bold text-white shadow-lg"
               style={{ background:"linear-gradient(135deg,#10b981,#059669)", animation:"float 3s 0.5s ease-in-out infinite" }}>
-              98% Success Rate ✨
+              100% Success Rate ✨
             </div>
             <div className="absolute -bottom-4 -left-6 px-3 py-1.5 rounded-xl text-xs font-bold text-white shadow-lg"
               style={{ background:"linear-gradient(135deg,#f59e0b,#d97706)", animation:"float 3.5s 1s ease-in-out infinite" }}>
@@ -616,7 +616,7 @@ function About() {
               <div className="w-24 h-1 bg-white/30 rounded-full mx-auto my-7" />
 
               <p className="text-indigo-100 font-semibold tracking-wide">
-                — Vijay & Sunita Patil, Founders of {SITE.name}
+                —  Sandeep Vishwakarma, Founder of {SITE.name}
               </p>
             </div>
           </div>
@@ -768,9 +768,18 @@ function Branches() {
                   <span className="flex items-center gap-2 text-slate-600"><span>📞</span>{b.phone}</span>
                 </div>
                 {/* Map placeholder */}
-                <div className="mt-5 h-28 rounded-2xl bg-indigo-50 flex items-center justify-center text-slate-400 text-sm border border-indigo-100">
-                  🗺️ Map View
-                </div>
+                <div className="mt-5 h-28 rounded-2xl overflow-hidden border border-indigo-100">
+  <iframe
+    title="Location Map"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.143977133647!2d72.86815127117639!3d19.406184201473515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7af352eef00bb%3A0x20eec31a51327463!2sVIJAY%20CLASSES!5e0!3m2!1sen!2sus!4v1779171316199!5m2!1sen!2sus" 
+    width="100%"
+    height="100%"
+    style={{ border: 0 }}
+    allowFullScreen=""
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  ></iframe>
+</div>
               </div>
             </Reveal>
           ))}
